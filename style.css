@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+ /* Navbar section */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;       
+}
+
+.navbar-right {
+    display: flex;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+    padding: 20px;
+}
+
+a:hover {
+    background-color: #ccc;
+}
+
+.fa-user,
+.fa-th,
+.fa-usd,
+.fa-envelope {
+    margin-right: 3px;
+}
+
+
