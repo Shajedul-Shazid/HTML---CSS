@@ -9,6 +9,14 @@ body, h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", sans-serif;
 }
 
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
  /* Navbar section */
 
 .navbar {
@@ -20,6 +28,7 @@ body, h1, h2, h3, h4, h5, h6 {
     top: 0;
     width: 100%;   
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);   
+    z-index: 1;
 }
 
 .navbar-right {
@@ -47,31 +56,48 @@ body, h1, h2, h3, h4, h5, h6 {
 
 }
 
+/* Header */
+
 header {
     padding: 100px;
     color: white;
+}
+
+.gray {
+    filter: grayscale(50%);
 }
 .bgimage-1 {
     background-position: center;
     background-size: cover;
     background-image: url('images/mac.jpg');
     height: 100vh;
+    position: relative;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    justify-content: center;
+.header-text {
+    position: absolute;
+    top: 40%;
 }
 
-button {
+.header-icon {
+    position: absolute;
+    bottom: 25px;
+}
+
+
+
+.learn-btn {
     text-decoration: none;
     font-size: 20px;
     text-transform: uppercase;
     color: black;
-    padding: 20px;
-    width: 50%;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.learn-btn:hover {
+    opacity: 1;
 }
 
 header h3 {
@@ -82,15 +108,11 @@ p {
     font-size: 18px;
 }
 
-.header-text {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
+/* about */
 
 .about {
     text-align: center;
-    padding: 50px;
+    padding:128px 16px;
 }
 
 .key-feature {
@@ -125,14 +147,19 @@ p {
     background-color: #F1F1F1;
     display: flex;
     justify-content: space-between;
-    padding: 100px;
-
+    /* padding: 100px;   */
+    padding:128px 16px;
 }
 
 .promo-text {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 40%;
+}
+
+.promo-img {
+    width: 40%;
 }
 
 .promo-section h3 {
@@ -141,13 +168,342 @@ p {
 
 .image {
     border-radius: 8px;
-    width: 100%;
+    /* width: 100%; */
 }
-
 
  .promo-button {
     background-color: #000;
     color: #fff;
     padding: 16px;
     text-decoration: none;
+    border: none;
  }
+
+.promo-button:hover {
+    background-color: #ccc;
+    color: #000;
+ }
+
+ /* Team Section */
+
+#team {
+    padding:128px 16px;
+    filter: grayscale(75%);
+ }
+
+.team-moto,
+.team-title {
+    text-align: center;
+ }
+ .team-card {
+    width: 25%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+ }
+
+ .four-card {
+    margin-top: 64px;
+    display: flex;
+    gap: 20px;
+ }
+
+ .team-moto {
+    margin-top: 40px;
+ }
+
+ .team-text {
+   padding: 0.01em 16px;
+ }
+.team-text,
+h2, p, button {
+    margin-top: 15px;
+    /* font-family: inherit; */
+    font-family: "Raleway", sans-serif;
+}
+.team-btn {
+    width: 100%;
+    margin-bottom: 15px;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.team-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+/* Promo Section "Statistics" */
+
+#Statistics {
+    background-color: #616161;
+    padding: 64px;
+    display: flex;
+    color: #fff;
+    text-align: center;
+}
+
+.Statistic {
+    width: 25%;
+}
+
+.statistic-percentage {
+    font-size: 36px;
+}
+
+/* Work Section */
+
+#work-section {
+    padding:128px 16px;
+}
+
+.work-title,
+.work-moto {
+    text-align: center;
+}
+
+.galley-section-1 {
+    margin-top: 64px;
+    display: flex;
+    gap: 5px;
+}
+
+.img-1,
+.img-2,
+.img-3,
+.img-4 {
+    width: 25%;
+}
+
+.galley-section-1 img {
+    width: 100%;
+}
+
+.galley-section-1 img:hover {
+    opacity: 0.60;
+}
+
+.galley-section-2 {
+    display: flex;
+    gap: 5px;
+}
+
+.galley-section-2 img:hover {
+    opacity: 0.60;
+}
+
+.galley-section-2 img {
+    width: 100%;
+}
+
+/* Skills Section */
+
+#skills {
+    background-color: #f1f1f1;
+    padding: 64px;
+    display: flex;
+    gap: 10px;
+}
+
+.skills-left {
+    width: 50%;
+}
+
+.skills-right {
+    width: 50%;
+}
+
+/* photography  */
+
+.photo-percent {
+    background-color: #9E9E9E; 
+    width:100%;
+    margin-top: 10px;
+}
+
+.photo-percentage {
+    background-color: #616161; 
+    width: 90%;
+    color: white; 
+    padding: 0.39em 16px;
+    text-align: center; 
+}
+
+/* web design  */
+
+.design-percent {
+    background-color: #9E9E9E; 
+    width:100%;
+    margin-top: 10px;
+}
+
+.design-percentage {
+    background-color: #616161; 
+    width: 85%;
+    color: white; 
+    padding: 0.39em 16px;
+    text-align: center; 
+}
+
+/* photoshop */
+
+.photosop-percent {
+    background-color: #9E9E9E; 
+    width:100%;
+    margin-top: 10px;
+}
+
+.photosop-percentage {
+    background-color: #616161; 
+    width: 75%;
+    color: white; 
+    padding: 0.39em 16px;
+    text-align: center; 
+}
+
+.skills-margin-right {
+    margin-right: 10px;
+}
+
+/* Pricing Section */
+
+#pricing {
+    padding:128px 64px;
+    background-color: #616161;
+    color: #fff;
+}
+.pricingt-title,
+.pricing-para {
+    text-align: center;
+}
+.pricingt-title {
+    margin-bottom: 30px;
+}
+
+.all-prices {
+   padding-top: 64px; 
+   display: flex;
+   gap: 10px;
+}
+
+.basic,
+.pro,
+.premium {
+    width: 33%;
+}
+
+#pricing li {
+    list-style-type: none;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.basic {
+    
+}
+
+.padding-32 {
+   padding-top: 32px !important;
+   padding-bottom: 32px !important;
+   background-color: #000;
+   text-align: center;
+   font-size: 24px !important;
+}
+
+.padding-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+    background-color: #fff;
+    text-align: center;
+    font-size: 24px !important;
+    color: #000;
+}
+
+.padding-24 {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+    background-color: #F1F1F1;
+    text-align: center;
+}
+
+.signup-btn {
+    padding: 12px 24px !important;
+    display: inline-block;
+    text-align: center; 
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.padding-48 {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    background-color: red;
+    font-size: 24px !important;
+    text-align: center;
+}
+
+/* Contact Section */
+
+#contact {
+    padding: 128px 16px;
+    background-color: #F1F1F1;
+}
+
+.contact-title,
+.contact-para {
+    text-align: center;
+}
+
+.contact-info {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Image of location/map */
+
+.map-img {
+    max-width: 100%;
+    margin-top: 48px;
+    filter: grayscale(75%);
+}
+
+/* footer section  */
+
+#footer {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
+.top-arrow {
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #000;   
+    border: 0;
+    text-decoration: none;
+}
+
+.footer-icon {
+    margin-top: 20px;
+}
+
+.w3css {
+    color: #fff;
+}
