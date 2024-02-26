@@ -5,8 +5,14 @@
     font-family: "Raleway", sans-serif;
 }
 
+
 body, h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", sans-serif;
+}
+
+body, html {
+	line-height: 1.8;
+    font-size: 15px;
 }
 
 h3 {
@@ -37,14 +43,17 @@ p {
 }
 
 .navbar a {
-    text-decoration: none;
-    font-size: 20px;
+    text-decoration: none;   
     text-transform: uppercase;
     color: black;
     padding: 20px;
 }
 
- .navbar a:hover {
+.navbar-logo {
+    letter-spacing: 4px;
+}
+
+.navbar a:hover {
     background-color: #ccc;
 }
 
@@ -59,8 +68,13 @@ p {
 /* Header */
 
 header {
-    padding: 100px;
+    padding-top: 115px;
+    padding-left: 39px;    
     color: white;
+}
+
+.header-para {
+    padding-bottom: 13px;
 }
 
 .gray {
@@ -75,8 +89,8 @@ header {
 }
 
 .header-text {
-    position: absolute;
-    top: 40%;
+	padding-top: 208px;
+    padding-left: 10px;
 }
 
 .header-icon {
@@ -84,24 +98,25 @@ header {
     bottom: 25px;
 }
 
-
-
 .learn-btn {
     text-decoration: none;
-    font-size: 20px;
-    text-transform: uppercase;
+    font-size: 18px;
     color: black;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
+    background-color: #CCCCCC;
+    opacity: 0.60;
 }
 
-.learn-btn:hover {
-    opacity: 1;
+.learn-btn:hover {   
+    color: #000!important;
+    background-color: #ccc!important;
 }
 
 header h3 {
     font-size: 64px;
+    font-weight: 400;
 }
 
 p {
@@ -113,6 +128,7 @@ p {
 .about {
     text-align: center;
     padding:128px 16px;
+    
 }
 
 .key-feature {
@@ -168,7 +184,7 @@ p {
 
 .image {
     border-radius: 8px;
-    /* width: 100%; */
+    width: 100%;
 }
 
  .promo-button {
@@ -302,7 +318,7 @@ h2, p, button {
     background-color: #f1f1f1;
     padding: 64px;
     display: flex;
-    gap: 10px;
+    gap: 100px;
 }
 
 .skills-left {
@@ -325,7 +341,7 @@ h2, p, button {
     background-color: #616161; 
     width: 90%;
     color: white; 
-    padding: 0.39em 16px;
+    padding:0 8px;
     text-align: center; 
 }
 
@@ -341,7 +357,7 @@ h2, p, button {
     background-color: #616161; 
     width: 85%;
     color: white; 
-    padding: 0.39em 16px;
+    padding:0 8px;
     text-align: center; 
 }
 
@@ -357,7 +373,7 @@ h2, p, button {
     background-color: #616161; 
     width: 75%;
     color: white; 
-    padding: 0.39em 16px;
+    padding:0 8px;
     text-align: center; 
 }
 
@@ -384,6 +400,7 @@ h2, p, button {
    padding-top: 64px; 
    display: flex;
    gap: 10px;
+   align-items: center;
 }
 
 .basic,
@@ -477,7 +494,7 @@ input {
 /* Image of location/map */
 
 .map-img {
-    max-width: 100%;
+    width: 100%;
     margin-top: 48px;
     filter: grayscale(75%);
 }
@@ -506,4 +523,148 @@ input {
 
 .w3css {
     color: #fff;
+}
+.toggle-icon{
+    display: none;
+}
+.closBtn {
+	display: none;
+}
+
+@media only screen and (max-width: 1025px)  {
+    header h3 {
+        font-weight: 400;
+    }
+      
+}
+
+@media only screen and (max-width: 600px) {
+
+  .navbar-right {
+	position: fixed;
+	width: 300px;
+	left: -373px;
+	top: 0;
+	height: 100%;
+	/* background: white; */
+    background-color: black;   
+    display: block;
+
+}
+
+.navbar-right a {
+    color: #fff;
+}
+
+.navbar a {
+	display: block;
+   
+}
+    .toggle-icon{
+        display: block;
+      
+    }
+    .closBtn {
+        display: block;
+    }
+
+    header h3 {
+        font-size: 36px;
+    }
+
+    .header-text {
+        left: 36px;
+      }
+
+      .quarter-row {
+        flex-wrap: wrap;
+      }
+
+      #skills {
+        flex-wrap: wrap;
+    }
+
+    #Statistics {
+        flex-wrap: wrap;
+    }
+
+    .promo-section {
+        flex-wrap: wrap;
+    }
+
+    .promo-text {
+        width: 100%;
+    }
+
+    .promo-img {
+        margin-top: 30px;
+        width: 100%;
+      }
+
+    .four-card {
+        flex-wrap: wrap;
+      }
+
+      .team-card {
+        width: 100%;
+      }  
+
+    .Statistic {
+        width: 100%;
+    }
+
+    .galley-section-1 {
+        flex-wrap: wrap;
+      }
+
+    .img-1, .img-2, .img-3, .img-4 {
+        width: 100%;
+      }  
+
+      .galley-section-2 {
+        flex-wrap: wrap;
+      }  
+
+    .all-prices {
+        flex-wrap: wrap;
+      }
+
+      .basic, .pro, .premium {
+        width: 100%;
+    }  
+
+    .skills-left {
+        width: 100%;
+      }
+      
+      .skills-right {
+        width: 100%;
+      }  
+}
+
+@media only screen and (max-width: 900px) { 
+    .four-card {
+        flex-wrap: wrap;
+      }     
+      
+      .team-card {
+        width: 48%;
+      } 
+
+      .galley-section-1 {
+        flex-wrap: wrap;
+    }
+
+    .galley-section-2 {
+        flex-wrap: wrap;
+    }
+
+      .img-1, .img-2, .img-3, .img-4 {
+        width: 49%;
+      }
+
+      .all-prices {
+        gap: 15px;
+      }
+
 }
